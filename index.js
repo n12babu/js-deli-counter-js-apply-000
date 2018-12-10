@@ -13,14 +13,16 @@ const nowServing = (line)=>{
 }
 
 
+
+
+
+
 const currentLine = (line)=>{
-  if (line.length===0){
+  if (line.length ===0){
     return `The line is currently empty.`;
   }
 let position = [];
-for (let i= 0; i<line.length; i++){
-  position.push (i+1+'. '+line[i])
+for (let i=0; i<line.length; i++){
+  position.push(i+1+ '. '+ line[i])
+}return `The line is currently: ${position.join(', ')}`
 }
-return `The line is currently: ${position.join(', ')}`
-
-};
